@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/index.css" rel="stylesheet " />
+    <title>App sala</title>
+</head>
+<body>
+    <main>
+    <h1>Ingresa Legajo</h1> 
+    <form name="login"> 
+        <span class="number"> 
+            <input name="password" placeholder="Legajo" type="number" class="input-legajo" value="" size="10" /> 
+        </span>
+        <span class="cnt"> 
+            <input value="Entrar" target="_parent" onclick="Login()" type="button" class="save-button"/> 
+        </span>
+    </form> 
+    
+    <script language="JavaScript"> 
+    function Login(){ 
+    var done=0; 
+    var password=document.login.password.value; 
+    if (password=="112233") { 
+    window.location="/pages/publicidad.html"; 
+    } 
+    if (password=="223344") { 
+    window.location="/pages/publicidad.html"; 
+    } 
+    if (password=="") { 
+    window.location="error.html"; 
+    } 
+    } 
+    </script> 
+    <script language="Javascript"> 
+    document.oncontextmenu = function(){return false} 
+    </script>
+    </main>
+    
+</body>
+</html>

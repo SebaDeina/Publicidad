@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Sala</title>
+    <link href="/index.css" rel="stylesheet " />
+</head>
+<body>
+    <main>
+        <h1>Pantallas de Publicidad</h1>
+        <form name="Form-Publicidad" netlify>        
+            <input id="input-original" placeholder="Nombre" type="text" name="Nombre" required> 
+            <input id="input-original" placeholder="Legajo" type="number" name="Legajo" required> 
+            <p>
+                <label id="input-checkbox">
+                    <input value="No reproduce la publicidad y esta en el menu principal" type="checkbox" name="Problema"> 
+                    No reproduce la publicidad y esta en el menu principal
+                </label>
+            </p>
+            <p>
+                <label id="input-checkbox">
+                    <input value="Se apago la Pc / las pantallas" type="checkbox" name="Problema">
+                    Se apago la Pc / las pantallas
+                </label>
+            </p>
+            <p>
+                <label id="input-checkbox">
+                    <input value="No hay conección a internet" type="checkbox" name="Problema"> 
+                    No hay conección a internet
+                </label>
+            </p>
+                <button id="save-button" class="save-button" type="submit">Enviar alerta</button>
+       </form>
+    </main>
+</body>
+</html>
